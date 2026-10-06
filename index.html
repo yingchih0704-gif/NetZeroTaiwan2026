@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="2026 台灣國際淨零永續展學生觀展學習單：行前規劃、策展觀察、攤位紀錄與提問。支援自動暫存、Word下載與列印。">
+<title>2026 台灣國際淨零永續展｜觀展學習單</title>
+<style>
+:root{--ink:#153c32;--green:#21634f;--mint:#dcece3;--paper:#f5f7f2;--line:#d8e2dc;--soft:#53675e;--gold:#efcb70}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"微軟正黑體","Noto Sans TC",system-ui,sans-serif;line-height:1.7}
+a{color:var(--green);text-underline-offset:4px}
+button,input,textarea,select{font:inherit}
+button,a,input,textarea,select{touch-action:manipulation}
+button{cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid #c49125;outline-offset:3px}
+header{background:var(--ink);color:white;padding:40px 22px 32px}
+header>div{max-width:960px;margin:auto}
+.eyebrow{font-size:12px;letter-spacing:2px;color:#bfd5c8}
+h1{font-size:clamp(25px,4vw,39px);line-height:1.4;margin:12px 0}
+header p{color:#dcece3;margin:8px 0;max-width:740px}
+.badge{display:inline-block;border:1px solid #6a9180;border-radius:20px;padding:3px 12px;font-size:13px;margin:7px 6px 0 0}
+.badge.gold{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+nav{position:sticky;top:0;z-index:2;background:#fffffff5;border-bottom:1px solid var(--line);padding:12px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+nav a{padding:5px 15px;border-radius:20px;text-decoration:none;background:var(--paper);font-size:14px;font-weight:700}
+main{max-width:1000px;margin:24px auto;padding:0 18px 35px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:25px;margin:18px 0}
+.card h2{font-size:23px;line-height:1.5;margin:0 0 7px}
+.step{color:var(--green);font-weight:700;font-size:13px;letter-spacing:1px}
+.hint{color:var(--soft);font-size:14px;margin:6px 0 16px}
+.info-grid,.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.info-grid p{margin:4px 0}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}
+.links a,.btn{border:1px solid var(--line);border-radius:10px;background:white;padding:9px 13px;text-decoration:none;font-size:14px}
+.btn.primary{background:var(--green);color:white;border-color:var(--green)}
+.notice{background:#f1f6f1;border-left:4px solid var(--green);padding:12px 16px;border-radius:6px;font-size:14px;margin:16px 0}
+.field{margin:16px 0}
+label{display:block;font-weight:650;font-size:15px;margin:0 0 7px}
+input,textarea,select{width:100%;padding:12px;border:1px solid #adbbb2;border-radius:9px;background:#fff;color:#153c32;font-size:16px}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--green);outline-offset:1px}
+textarea{min-height:110px;resize:vertical;line-height:1.7}
+::placeholder{color:#687d70;font-size:14px;opacity:1}
+.row .field{margin:8px 0}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chips span{font-size:13px;background:var(--paper);border-radius:16px;padding:4px 11px}
+.mission{border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:18px}
+.mission h3{margin:0 0 6px;font-size:18px}
+.observation{border-top:1px solid var(--line);padding-top:16px;margin-top:16px}
+.observation h3{font-size:18px;margin:0}
+.observation p{margin:5px 0 10px;color:var(--soft);font-size:14px}
+details{margin:14px 0;border:1px solid var(--line);padding:12px 15px;border-radius:10px}
+summary{cursor:pointer;font-weight:650}
+.actions{max-width:1000px;margin:0 auto 28px;padding:0 18px}
+.actions-inner{background:var(--mint);border-radius:15px;padding:20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.actions h2{font-size:18px;margin:0 0 8px;width:100%}
+footer{max-width:1000px;padding:0 20px 30px;margin:auto;color:var(--soft);font-size:13px}
+#saveStatus{font-size:13px;color:var(--soft);margin:0}
+.progress{display:flex;justify-content:space-between;gap:12px;font-size:13px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:12px;margin-top:18px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.print-value{display:none}
+.source{font-size:12px;color:var(--soft)}
+@media(max-width:640px){header{padding:28px 20px}.card{padding:19px 16px;border-radius:13px}.info-grid,.row{grid-template-columns:1fr;gap:4px}main{padding:0 12px}nav{padding:8px;gap:5px}nav a{padding:5px 10px;font-size:13px}.actions-inner{padding:17px}.actions .btn{flex:1 1 45%}h2{font-size:21px!important}}
+@media print{@page{size:A4;margin:16mm}body{background:white;color:#111;font-size:11pt}header{background:white;color:#111;padding:0 0 12pt}header p,.eyebrow{color:#333}h1{font-size:20pt}.badge{color:#111!important;background:white!important;border-color:#999}nav,.actions,.no-print,.progress,#saveStatus{display:none!important}main{padding:0;margin:0;max-width:none}.card{border:0;border-radius:0;padding:12pt 0;margin:0;box-shadow:none}.card h2{font-size:15pt!important;break-after:avoid}h3,label{break-after:avoid}.mission,.observation{break-inside:avoid}.mission{padding:10pt}.hint{font-size:10pt}.print-value{display:block;white-space:pre-wrap;overflow-wrap:anywhere;min-height:28pt;padding:6pt;border:1px solid #aaa;border-radius:3pt;color:#111}input,textarea,select{display:none}.info-grid,.row{display:grid;grid-template-columns:1fr 1fr;gap:10pt}a{color:#111}footer{padding:12pt 0}.notice{background:white;border:1px solid #999}}
+</style>
+</head>
+<body>
+<header><div><div class="eyebrow">NET-ZERO TAIWAN 2026 · STUDENT FIELD NOTES</div><h1>台灣國際淨零永續展<br>觀展規劃與現場學習單</h1><p>帶著問題進場，帶著證據離開。從永續解方與策展設計兩個角度，練習把專業議題轉化成觀眾看得懂、願意參與的展覽。</p><span class="badge gold">2026.10.14 — 10.16</span><span class="badge">南港展覽館 1 館</span><span class="badge">小組填寫 · 手機適用</span></div></header>
+<nav aria-label="學習單段落"><a href="#prepare">行前資訊</a><a href="#before">看展前</a><a href="#during">看展中</a><a href="#finish">整理與下載</a></nav>
+<main>
+<section class="card" id="prepare"><div class="step">出發前先確認</div><h2>這次，我們去看什麼？</h2><div class="info-grid"><div><p><strong>展覽：</strong>2026 台灣國際淨零永續展</p><p><strong>地點：</strong>台北南港展覽館 1 館<br>台北市南港區經貿二路 1 號</p></div><div><p><strong>10/14（三）–10/15（四）：</strong>10:00–17:00</p><p><strong>10/16（五）：</strong>10:00–16:00</p><p><strong>入場：</strong>攜帶有效學生證，可免費入場。</p></div></div><div class="links no-print"><a href="https://www.energytaiwan.com.tw/zh-tw/index.html" target="_blank" rel="noopener noreferrer">展覽官網 ↗</a><a href="https://www.energytaiwan.com.tw/zh-tw/exhibitor/show-area-data/index.html" target="_blank" rel="noopener noreferrer">參展廠商名單 ↗</a><a href="https://booth.e-taitra.com.tw/map/v2/zh-TW/2026PV?cad=0" target="_blank" rel="noopener noreferrer">2026 展場平面圖 ↗</a><a href="https://www.energytaiwan.com.tw/zh-tw/menu/AD98A58AD25AFF4FD0636733C6861689/info.html" target="_blank" rel="noopener noreferrer">官方參觀規定 ↗</a></div><div class="notice"><strong>行前提醒：</strong>學生團體需依官網指示填寫團體參觀表單，由老師統籌確認。請衣著整齊、勿穿拖鞋。集合時間、地點與繳交方式依老師公告；拍照、錄音或訪談前先徵求同意。</div><p class="hint">以淨零永續展為主要觀察範圍；同場智慧能源週的太陽光電、風力、儲能與多元創能，可依小組議題安排延伸參觀。攤位與位置請以當年度名單、平面圖及現場公告為準。</p><p class="source">展覽資訊核對：2026/10/06。來源：<a href="https://www.energytaiwan.com.tw/zh-tw/menu/D244D981B21AC183D0636733C6861689/info.html" target="_blank" rel="noopener noreferrer">官方展覽介紹</a>、官方參觀規定。</p></section>
+<section class="card" id="basic"><div class="step">小組基本資料</div><h2>先建立你們的觀展紀錄</h2><div class="row"><div class="field"><label for="groupName">組別名稱</label><input id="groupName" type="text" maxlength="200" placeholder="例如：第 3 組／循環設計組" autocomplete="off"></div><div class="field"><label for="members">組長與組員</label><input id="members" type="text" maxlength="500" placeholder="請以逗號分隔姓名" autocomplete="off"></div></div><div class="row"><div class="field"><label for="visitDate">觀展日期</label><input id="visitDate" type="date" min="2026-10-14" max="2026-10-16"></div><div class="field"><label for="zone">主要參觀範圍／展區</label><input id="zone" type="text" maxlength="500" placeholder="例如：淨零永續展，另延伸參觀智慧儲能" autocomplete="off"></div></div><div class="row"><div class="field"><label for="timeStart">預計觀展時間（起）</label><input id="timeStart" type="time" min="10:00" max="17:00"></div><div class="field"><label for="timeEnd">預計觀展時間（訖）</label><input id="timeEnd" type="time" min="10:00" max="17:00"></div></div><p class="hint" id="timeHint">請依當日開放時間規劃，10/16 提早於 16:00 閉展。</p><div class="notice no-print"><strong>小組使用方式：</strong>指定一位組員在同一部手機或電腦統整填寫。內容會暫存在目前瀏覽器，重新整理可接續；各組員的裝置不會同步。換裝置前請下載備份，再到新裝置匯入。</div><p id="saveStatus" role="status" aria-live="polite">尚未填寫，開始輸入後會自動暫存。</p></section>
+<section class="card" id="before" data-stage="before"><div class="step">01 · 看展前｜建議 15–20 分鐘</div><h2>帶著觀展目標與問題出發</h2><p class="hint">出發前完成這一部分：選定議題、規劃 2 個攤位，並確認分工與提問。填寫進度只表示欄位有內容，請再檢查內容是否具體。</p><div class="chips" aria-label="可參考的議題"><span>節能與能源管理</span><span>循環經濟</span><span>碳管理與減碳技術</span><span>綠電交易</span><span>綠色金融</span><span>氣候科技</span><span>低碳運輸</span></div><div class="field"><label for="goal1">1. 我們想從淨零永續展學到什麼？</label><textarea id="goal1" placeholder="列出 2–3 個可觀察的目標。例如：找出一種減少能源使用的解方；比較兩個攤位如何讓非專業觀眾理解減碳。"></textarea></div><div class="field"><label for="goal2">2. 我們希望學到哪些策展手法？</label><textarea id="goal2" placeholder="選 2 項並說明原因：主題敘事、模型／圖解、互動體驗、空間動線、視覺設計、觀眾參與。這些手法能如何用在我們的教育展？"></textarea></div><div class="field"><label for="goal3">3. 我們聚焦哪一個永續議題？</label><textarea id="goal3" placeholder="主要議題＋生活或校園中的問題＋想釐清的疑問。例如：循環經濟／展覽佈置材料的浪費／哪些材料真的能重複使用？"></textarea></div><div class="field"><label for="route">4. 預計參觀哪 2 個攤位？</label><textarea id="route" placeholder="先查官網，記下：參展單位、攤位號碼、選擇原因、參觀順序。若尚未選定，先列搜尋關鍵字，進場後補上。"></textarea></div><div class="row"><div class="field"><label for="goal4">5. 我們如何分工與紀錄？</label><textarea id="goal4" placeholder="每位組員都有任務：路線／時間管理、策展觀察、訪談提問、照片／資料紀錄。人數少可兼任，請寫出姓名與任務。"></textarea></div><div class="field"><label for="questions">6. 我們準備問展商的 2 個問題</label><textarea id="questions" placeholder="例如：這個方案改善哪個問題？減碳數字和哪個基準比較？如果做給學生看，您會如何解釋這項技術？"></textarea></div></div><div class="progress" aria-live="polite"><span>看展前填寫進度</span><span id="beforeProgress">0 / 6 欄</span></div></section>
+<section class="card" id="during" data-stage="during"><div class="step">02 · 看展中｜邊走、邊問、邊記錄</div><h2>從「看到」走到「有根據的觀察」</h2><p class="hint">先記 2 個具體攤位，再統整六大策展面向。每一筆觀察都盡量附上攤位、展品名稱或照片編號；沒有取得的資訊，寫「未提供／待查證」，不要自行補成事實。</p><details class="no-print"><summary>不知道怎麼提問？打開現場訪談小抄</summary><p>「您好，我們正在做教育策展課程的觀展作業，方便請教兩個問題嗎？」</p><ol><li>這個產品或服務主要解決什麼問題？適合誰使用？</li><li>您如何計算節能或減碳成效？比較基準、資料期間與適用條件是什麼？</li><li>這個方案在成本、材料、回收或使用條件上有哪些限制？</li><li>您用了哪些展示方式，讓非專業觀眾理解？</li></ol><p>結束時道謝；若對方忙碌，可先閱讀展板或型錄，並在紀錄中註明資料來源。</p></details>
+<article class="mission"><h3>案例 A｜第一個攤位</h3><div class="row"><div class="field"><label for="aName">參展單位／攤位號碼</label><input id="aName" type="text" maxlength="500" placeholder="請依現場招牌填寫"></div><div class="field"><label for="aTopic">展品／服務與永續議題</label><input id="aTopic" type="text" maxlength="500" placeholder="例如：能源管理系統／節能"></div></div><div class="field"><label for="aProblem">解決什麼問題？如何運作？</label><textarea id="aProblem" placeholder="用自己的話寫：誰遇到什麼問題 → 這個方案如何改善 → 需要什麼條件。"></textarea></div><div class="field"><label for="aEvidence">永續主張、證據與待查證處</label><textarea id="aEvidence" placeholder="展商說了什麼？展板或型錄提供什麼數據／來源？有比較基準、年份、計算範圍嗎？缺少的資料請寫「待查證」。"></textarea></div><div class="field"><label for="aDesign">最有效的展示方式與觀眾反應</label><textarea id="aDesign" placeholder="具體描述模型、圖解、影片或互動。它幫助觀眾理解哪個觀念？你看到觀眾做了什麼？"></textarea></div><div class="field"><label for="aSource">訪談重點與資料索引</label><textarea id="aSource" placeholder="記下提問及回應；註明是展板、展商口述、型錄或親自觀察，並填照片編號／來源網址。照片請另行保存。"></textarea></div></article>
+<article class="mission"><h3>案例 B｜第二個攤位</h3><div class="row"><div class="field"><label for="bName">參展單位／攤位號碼</label><input id="bName" type="text" maxlength="500" placeholder="選另一個可比較的攤位"></div><div class="field"><label for="bTopic">展品／服務與永續議題</label><input id="bTopic" type="text" maxlength="500" placeholder="可選相同議題、不同展示方式"></div></div><div class="field"><label for="bProblem">解決什麼問題？如何運作？</label><textarea id="bProblem" placeholder="用自己的話寫：誰遇到什麼問題 → 這個方案如何改善 → 需要什麼條件。"></textarea></div><div class="field"><label for="bEvidence">永續主張、證據與待查證處</label><textarea id="bEvidence" placeholder="主張是什麼？證據在哪裡？哪些部分仍要確認？請區分展商說法與小組判斷。"></textarea></div><div class="field"><label for="bDesign">最有效的展示方式與觀眾反應</label><textarea id="bDesign" placeholder="描述展示媒介及觀眾行為，並與案例 A 比較。"></textarea></div><div class="field"><label for="bSource">訪談重點與資料索引</label><textarea id="bSource" placeholder="提問、回應、資料來源、照片編號／網址。若未訪談，請註明。"></textarea></div></article>
+<h3>六大策展觀察面向</h3><p class="hint">每個面向記錄至少 1 個具體例子，再寫下你的判斷與理由；可引用案例 A、B，避免重複抄寫。</p>
+<div class="observation"><h3>1. 策展主題與理念</h3><p>展商如何說明「為什麼需要永續」？問題、解方與成效是否連成故事？專有名詞能否讓一般觀眾理解？</p><label class="sr-only" for="o1">策展主題與理念紀錄</label><textarea id="o1" placeholder="攤位／展品＋看見的設計＋它如何幫助理解＋可改善之處。"></textarea></div>
+<div class="observation"><h3>2. 展品與內容呈現</h3><p>模型、圖表、前後比較或實物如何說明技術？節能減碳數字是否有來源與條件？哪些資訊過多或不足？</p><label class="sr-only" for="o2">展品與內容呈現紀錄</label><textarea id="o2" placeholder="記錄一個展示媒介，說明它呈現了什麼、還缺少什麼。"></textarea></div>
+<div class="observation"><h3>3. 空間與動線設計</h3><p>入口、展示、體驗與洽談區如何安排？人潮是否容易通行？指引、字體大小與觀看高度是否方便不同觀眾？</p><label class="sr-only" for="o3">空間與動線設計紀錄</label><textarea id="o3" placeholder="具體描述一段參觀路線、停留點或不易通行的位置。"></textarea></div>
+<div class="observation"><h3>4. 互動與觀眾體驗</h3><p>操作、遊戲或解說讓觀眾學會了什麼？觀眾只是按按鈕，還是能理解選擇與結果？</p><label class="sr-only" for="o4">互動與觀眾體驗紀錄</label><textarea id="o4" placeholder="互動任務＋觀眾實際行為＋理解到的觀念。沒有互動也可分析解說方式。"></textarea></div>
+<div class="observation"><h3>5. 視覺與氛圍設計</h3><p>色彩、燈光、圖像、字型如何支持主題？「綠色」外觀之外，是否說明材料再利用或佈展減廢的做法？</p><label class="sr-only" for="o5">視覺與氛圍設計紀錄</label><textarea id="o5" placeholder="記下可見設計；材料是否低碳若無證據，請保留為待確認的問題。"></textarea></div>
+<div class="observation"><h3>6. 行銷與延伸設計</h3><p>QR Code、型錄、社群、紀念品如何延伸學習或促成行動？觀眾離開後，能做什麼？</p><label class="sr-only" for="o6">行銷與延伸設計紀錄</label><textarea id="o6" placeholder="延伸工具＋帶走的資訊／行動＋對永續主題是否有幫助。"></textarea></div><div class="progress" aria-live="polite"><span>看展中填寫進度</span><span id="duringProgress">0 / 18 欄</span></div></section>
+<section class="card" id="finish" data-stage="finish"><div class="step">03 · 離場前｜建議 5–10 分鐘</div><h2>把觀察帶回自己的教育策展</h2><div class="field"><label for="comparison">1. 比較兩個攤位：哪個更能讓非專業觀眾理解？</label><textarea id="comparison" placeholder="以敘事、展示媒介或互動中的 2 項比較；引用具體例子，說明你們的判斷。"></textarea></div><div class="field"><label for="transfer">2. 我們想借用的一個策展方法</label><textarea id="transfer" placeholder="來源攤位＋展示方法＋想教給誰的永續觀念＋如何改成校園教育展活動＋如何知道觀眾學會了。"></textarea></div><div class="notice"><strong>繳交前檢查：</strong>小組資料、行前 6 題、2 個攤位案例、六大策展觀察與 2 題整理是否都有具體內容？照片編號能否對應另外保存的照片？確認後下載 Word，依老師指定方式繳交。</div><div class="progress" aria-live="polite"><span>整理填寫進度</span><span id="finishProgress">0 / 2 欄</span></div></section>
+</main>
+<div class="actions no-print"><div class="actions-inner"><h2>保存這次的學習成果</h2><button class="btn primary" id="wordBtn" type="button">下載 Word 學習單</button><button class="btn" id="printBtn" type="button">列印／存成 PDF</button><button class="btn" id="backupBtn" type="button">下載填寫備份</button><button class="btn" id="importBtn" type="button">匯入備份</button><button class="btn" id="offlineBtn" type="button">下載離線學習單</button><button class="btn" id="clearBtn" type="button">清除本機填寫</button><input class="sr-only" id="importFile" type="file" accept=".json,application/json" tabindex="-1"><p class="hint" style="width:100%;margin:5px 0 0">Word 以相容的 .doc 格式下載。照片請另存，學習單只記照片編號。列印可選擇「另存為 PDF」。備份檔可用來換裝置接續填寫；離線學習單可在沒有網路時開啟。</p><p id="actionStatus" style="width:100%;margin:0;font-size:14px" role="status" aria-live="polite"></p></div></div>
+<footer><strong>2026 台灣國際淨零永續展｜教育策展觀展學習單</strong><br>填寫內容只保存在你的瀏覽器及你下載的檔案，不會自動送給老師。請指定一位組員統整，完成後依老師公告繳交。共用裝置使用完畢，下載成果後再清除本機填寫。</footer>
+<script>
+'use strict';
+const STORAGE_KEY='education-curation-net-zero-2026-v1';
+const fields=Array.from(document.querySelectorAll('main input[id],main textarea[id],main select[id]'));
+const $=id=>document.getElementById(id);
+const data=()=>Object.fromEntries(fields.map(el=>[el.id,el.value]));
+const status=message=>{$('actionStatus').textContent=message;};
+function syncPrint(){fields.forEach(el=>{let p=el.nextElementSibling;if(!p||!p.classList.contains('print-value')){p=document.createElement('div');p.className='print-value';el.after(p);}p.textContent=el.value||'（尚未填寫）';});}
+function refresh(){document.querySelectorAll('[data-stage]').forEach(section=>{const items=Array.from(section.querySelectorAll('input[id],textarea[id],select[id]'));$(section.dataset.stage+'Progress').textContent=items.filter(x=>x.value.trim()).length+' / '+items.length+' 欄';});const lastDay=$('visitDate').value==='2026-10-16';$('timeStart').max=$('timeEnd').max=lastDay?'16:00':'17:00';let hint=lastDay?'10/16 開放 10:00–16:00，請在閉展前完成紀錄。':'10/14–10/15 開放 10:00–17:00；10/16 開放 10:00–16:00。';if($('timeStart').value&&$('timeEnd').value&&$('timeStart').value>=$('timeEnd').value)hint+=' ⚠ 結束時間應晚於開始時間。';if([$('timeStart'),$('timeEnd')].some(el=>el.value&&(el.value<el.min||el.value>el.max)))hint+=' ⚠ 請調整為當日開放時間內。';$('timeHint').textContent=hint;syncPrint();}
+function apply(values){fields.forEach(el=>{if(Object.prototype.hasOwnProperty.call(values,el.id)&&typeof values[el.id]==='string')el.value=values[el.id];});refresh();}
+function save(){refresh();try{localStorage.setItem(STORAGE_KEY,JSON.stringify({schema:1,values:data()}));$('saveStatus').textContent='已暫存於此瀏覽器 · '+new Date().toLocaleTimeString('zh-TW',{hour:'2-digit',minute:'2-digit'});}catch(e){$('saveStatus').textContent='此瀏覽器無法暫存。請下載填寫備份，避免關閉頁面後遺失。';}}
+function download(content,type,filename){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=filename;document.body.appendChild(link);link.click();setTimeout(()=>{URL.revokeObjectURL(url);link.remove();},1500);}
+function filename(ext){const group=($('groupName').value||'小組').replace(/[<>:"/\\|?*\x00-\x1f]/g,'_').slice(0,80);return '2026淨零永續展_觀展學習單_'+group+'.'+ext;}
+function reportHTML(){const copy=document.querySelector('main').cloneNode(true);copy.querySelectorAll('.no-print,.progress,#saveStatus,details,.print-value').forEach(el=>el.remove());copy.querySelectorAll('input[id],textarea[id],select[id]').forEach(el=>{const p=document.createElement('p');p.className='answer';p.textContent=$(el.id).value||'（尚未填寫）';el.replaceWith(p);});return '<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><title>2026 台灣國際淨零永續展觀展學習單</title><style>body{font-family:Microsoft JhengHei,Arial,sans-serif;line-height:1.6;color:#111}h1{font-size:20pt}h2{font-size:15pt;margin-top:20pt}h3{font-size:12pt}label{font-weight:bold;display:block}.answer{white-space:pre-wrap;border:1px solid #aaa;padding:8pt;min-height:20pt}.field{margin:10pt 0}.hint,.source{font-size:10pt;color:#555}.mission{border:1px solid #aaa;padding:10pt;margin:12pt 0}.chips{font-size:10pt}.chips span{margin-right:10pt}</style></head><body><h1>2026 台灣國際淨零永續展<br>觀展規劃與現場學習單</h1>'+copy.innerHTML+'</body></html>';}
+$('wordBtn').addEventListener('click',()=>{save();download('\ufeff'+reportHTML(),'application/msword',filename('doc'));status('Word 下載已開始。請確認檔案已儲存，再依老師指定方式繳交。');});
+$('printBtn').addEventListener('click',()=>{syncPrint();window.print();});
+window.addEventListener('beforeprint',syncPrint);
+$('backupBtn').addEventListener('click',()=>{download(JSON.stringify({schema:1,worksheet:'net-zero-2026',savedAt:new Date().toISOString(),values:data()},null,2),'application/json;charset=utf-8',filename('json'));status('備份下載已開始；在另一部裝置開啟本頁後可匯入。');});
+$('importBtn').addEventListener('click',()=>{$('importFile').click();});
+$('importFile').addEventListener('change',async event=>{const file=event.target.files[0];if(!file)return;try{if(file.size>1000000)throw new Error('size');const payload=JSON.parse(await file.text());if(payload.schema!==1||payload.worksheet!=='net-zero-2026'||!payload.values||typeof payload.values!=='object'||Array.isArray(payload.values))throw new Error('format');for(const el of fields){const value=payload.values[el.id];if(value!==undefined&&(typeof value!=='string'||value.length>100000))throw new Error('value');}if(fields.some(el=>el.value.trim())&&!confirm('匯入會取代目前填寫內容。建議先下載備份。確定匯入嗎？'))return;fields.forEach(el=>{el.value='';});apply(payload.values);save();status('備份已匯入，可以接續填寫。');}catch(e){status('無法匯入：請選擇本學習單下載的 JSON 備份檔（1 MB 以下）。目前內容保留。');}finally{event.target.value='';}});
+$('offlineBtn').addEventListener('click',()=>{const copy=document.documentElement.cloneNode(true);copy.querySelectorAll('main input[id],main textarea[id],main select[id]').forEach(el=>{const value=$(el.id).value;if(el.tagName==='TEXTAREA')el.textContent=value;else if(el.tagName==='SELECT')Array.from(el.options).forEach(o=>{o.toggleAttribute('selected',o.value===value);});else el.setAttribute('value',value);});copy.querySelectorAll('.print-value').forEach(el=>el.remove());copy.querySelector('#saveStatus').textContent='離線學習單：開始填寫後將嘗試暫存；請定期下載備份。';copy.querySelector('#actionStatus').textContent='';download('<!doctype html>\n'+copy.outerHTML,'text/html;charset=utf-8',filename('html'));status('離線學習單下載已開始，包含目前填寫內容。官網連結仍需網路；請定期下載備份。');});
+$('clearBtn').addEventListener('click',()=>{if(!confirm('確定清除這份學習單的本機填寫？請先下載 Word 或備份，清除後無法復原。'))return;try{localStorage.removeItem(STORAGE_KEY);}catch(e){}fields.forEach(el=>{el.value='';});refresh();$('saveStatus').textContent='已清除本機填寫。';status('已清除，可開始新的小組紀錄。');});
+fields.forEach(el=>{el.addEventListener('input',save);el.addEventListener('change',save);});
+try{const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');if(saved&&saved.schema===1&&saved.values){if(!fields.some(el=>el.value.trim())){apply(saved.values);$('saveStatus').textContent='已恢復此瀏覽器先前暫存的紀錄。';}else{$('saveStatus').textContent='已載入檔案中的填寫內容；開始輸入後會暫存。';}}}catch(e){$('saveStatus').textContent='此瀏覽器無法讀取暫存。請使用下載備份保存成果。';}refresh();
+</script>
+</body>
+</html>
+
